@@ -12,9 +12,6 @@ class SoftDeleteModel(models.Model):
     is_deleted = models.BooleanField(default=False)
     deleted_at = models.DateTimeField(null=True, blank=True)
 
-    objects = SoftDeleteManager()  
-    all_objects = models.Manager()  
-
     class Meta:
         abstract = True
 
