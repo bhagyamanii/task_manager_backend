@@ -1,7 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
+from accounts.models import User
+from backend.models import SoftDeleteManager, SoftDeleteModel
 
-class Task(models.Model):
+class Task(SoftDeleteModel):
     task_id = models.CharField(max_length=30, unique=True, editable=False)
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
@@ -13,6 +14,9 @@ class Task(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+    objects = SoftDeleteManager()
+    all_objects = models.Manager()
     
     def save(self, *args, **kwargs):
         if not self.task_id:
