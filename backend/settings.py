@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'login',
     'rbac',
     'django_filters',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -96,6 +97,7 @@ STATIC_URL = 'static/'
 
 #jwt
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
@@ -117,4 +119,12 @@ SIMPLE_JWT = {
     'USER_ID_CLAIM': 'user_id',
 
     'SIGNING_KEY': SECRET_KEY,
+}
+
+#for documentations
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Task Manager API',
+    'DESCRIPTION': 'RBAC + Ownership + JWT based Task Manager System',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }

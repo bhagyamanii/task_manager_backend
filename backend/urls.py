@@ -3,6 +3,7 @@ from django.urls import include, path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from django.http import JsonResponse
 from login.views import CustomTokenObtainView
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
 
 def home(request):
@@ -16,7 +17,6 @@ urlpatterns = [
     path('', home, name='home'),
 
     #login
-    # path("api/auth/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/auth/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("api/auth/token/", CustomTokenObtainView.as_view(), name="obtain_custom_token"),
 
@@ -25,5 +25,9 @@ urlpatterns = [
     
     #tasks
     path("api/tasks/", include("tasks.urls")),
+    
+    #docs
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     
 ]
