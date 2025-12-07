@@ -20,7 +20,7 @@ class SessionJWTMiddleware(MiddlewareMixin):
 
         jwt_session = token.get("session")
 
-        if jwt_session != str(user.session_token):
+        if jwt_session and str(jwt_session) != str(user.session_token):
             raise AuthenticationFailed("Session expired. Logged in elsewhere.")
 
         request.user = user

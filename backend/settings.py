@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'login',
     'rbac',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

@@ -12,6 +12,8 @@ class Task(SoftDeleteModel):
         related_name="tasks",
         blank=True
     )
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="owned_tasks", null=True, blank=True)
+    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -20,7 +22,7 @@ class Task(SoftDeleteModel):
     
     def save(self, *args, **kwargs):
         if not self.task_id:
-            last_task = Task.objects.all().order_by('id').last()
+            last_task = Task.all_objects.all().order_by('id').last()
             next_id = 1 if not last_task else last_task.id + 1
             self.task_id = f"TK{next_id}"
         super().save(*args, **kwargs)
