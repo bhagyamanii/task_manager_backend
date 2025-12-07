@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'accounts',
     'rest_framework',
     'rest_framework_simplejwt',
+    'login',
 ]
 
 MIDDLEWARE = [
@@ -31,6 +32,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'login.middleware.SessionJWTMiddleware',   
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -111,4 +113,6 @@ SIMPLE_JWT = {
 
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
+
+    'SIGNING_KEY': SECRET_KEY,
 }
