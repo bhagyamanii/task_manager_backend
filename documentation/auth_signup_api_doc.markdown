@@ -235,16 +235,3 @@ Interactive Swagger UI with:
 | POST  | `/api/accounts/signup/`      | Register new user                  | No            | Assigns "User" role automatically  |
 
 ---
-
-**Best Practices for Frontend**
-
-1. On login → store `access`, `refresh`, and `session`
-2. On every API call → send `Authorization: Bearer <access>`
-3. On 401 → try refresh token once
-4. If refresh fails with "Session expired" → force logout and redirect to login
-5. Never allow multiple simultaneous logins without warning
-
-**This system is secure, modern, and prevents session theft.**
-
-Let your frontend team know:  
-**Logging in from another device WILL log out all other sessions instantly.**
