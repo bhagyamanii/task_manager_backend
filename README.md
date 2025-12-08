@@ -1,17 +1,17 @@
-# 🚀 task_manager_backend
+# task_manager_backend
 
 A robust and scalable backend solution for managing tasks efficiently.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
 
-## ✨ Features
+## Features
 
-*   🔐 **Secure User Authentication & Authorization:** Manage user accounts and ensure secure access with robust login mechanisms.
-*   🛡️ **Role-Based Access Control (RBAC):** Define and assign roles to users, granting granular permissions for different actions and resources.
-*   📝 **Comprehensive Task Management:** Create, update, delete, and view tasks with various attributes, designed for efficient organization.
-*   ⚡ **High-Performance RESTful API:** Provides a clean and efficient API for seamless integration with frontend applications.
-*   🐍 **Scalable Python Architecture:** Built with Python, ensuring maintainability and future scalability for growing demands.
+* 1. **Secure User Authentication & Authorization:** Manage user accounts and ensure secure access with robust login mechanisms.
+* 2. **Role-Based Access Control (RBAC):** Define and assign roles to users, granting granular permissions for different actions and resources.
+* 3. **Comprehensive Task Management:** Create, update, delete, and view tasks with various attributes, designed for efficient organization.
+* 4. **High-Performance RESTful API:** Provides a clean and efficient API for seamless integration with frontend applications.
+
+
 
 ## ⚙️ Installation Guide
 
@@ -53,16 +53,6 @@ Ensure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
-
-5.  **Environment Configuration:**
-    Create a `.env` file in the `backend` directory (or root if specified by project structure) for sensitive configurations.
-    ```
-    # Example .env content
-    SECRET_KEY='your_super_secret_key_here'
-    DEBUG=True
-    DATABASE_URL='sqlite:///db.sqlite3' # Or your PostgreSQL/MySQL connection string
-    ```
-    *Note: For production, ensure `DEBUG=False` and use a strong `SECRET_KEY`.*
 
 6.  **Apply Database Migrations:**
     Set up your database by applying the necessary migrations.
