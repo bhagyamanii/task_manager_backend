@@ -254,13 +254,3 @@ Includes:
 | DELETE| `/api/tasks/TK123/`          | `task.delete`            | Soft delete task                 |
 
 ---
-
-**This is a production-ready, secure, scalable task management API with proper ownership, permissions, pagination, search, and filtering.**
-
-Perfect for integration into admin panels, team dashboards, or project management tools.
-
-Let your frontend team know:  
-All task IDs are like `TK42`  
-Ownership matters — non-admins can only edit their own tasks  
-Soft delete = tasks disappear but are recoverable  
-Use Swagger for testing!
