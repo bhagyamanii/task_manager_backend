@@ -136,75 +136,10 @@ curl -X GET -H "Authorization: Token a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0" h
 
 ### API Documentation (Placeholder)
 
-For a complete list of endpoints, request/response schemas, and authentication details, refer to the API documentation (e.g., Swagger/OpenAPI).
-
-[API Documentation Link Placeholder]
-
-## 🗺️ Project Roadmap
-
-Our goal is to continuously improve `task_manager_backend` with new features and enhancements.
-
-### Upcoming Features
-
-*   **v1.1 - Enhanced Task Management:**
-    *   Task deadlines and reminders.
-    *   Task categorization and tagging.
-    *   File attachments for tasks.
-*   **v1.2 - User & Team Collaboration:**
-    *   Team creation and management.
-    *   Task assignment to multiple users.
-    *   Real-time task updates via WebSockets.
-*   **v2.0 - Advanced Reporting & Analytics:**
-    *   Basic reporting on task completion rates.
-    *   Performance metrics for users/teams.
-    *   Integration with external analytics tools.
-
-### Planned Improvements
-
-*   Implement comprehensive API documentation (e.g., using drf-yasg).
-*   Add more extensive unit and integration tests.
-*   Improve error handling and logging mechanisms.
-*   Optimize database queries for large datasets.
-
-## 🤝 Contribution Guidelines
-
-We welcome contributions to `task_manager_backend`! Please follow these guidelines to ensure a smooth collaboration process.
-
-### Code Style
-
-*   Adhere to **PEP 8** for Python code style.
-*   Use a linter (e.g., `flake8`) to check your code before committing.
-*   Keep functions and methods concise and focused on a single responsibility.
-
-### Branch Naming Conventions
-
-*   Use descriptive branch names:
-    *   `feature/your-feature-name` for new features.
-    *   `bugfix/issue-description` for bug fixes.
-    *   `refactor/module-name` for code refactoring.
-    *   `docs/update-readme` for documentation updates.
-
-### Pull Request Process
-
-1.  **Fork** the repository.
-2.  **Create a new branch** from `main` (or `develop` if applicable).
-3.  **Make your changes** and ensure they align with the project's goals.
-4.  **Commit your changes** with clear, concise commit messages.
-    *   Example: `feat: Add user profile update endpoint` or `fix: Resolve task deletion bug`
-5.  **Push your branch** to your forked repository.
-6.  **Open a Pull Request (PR)** to the `main` branch of the original repository.
-7.  Provide a clear description of your changes in the PR.
-8.  Be responsive to feedback during the review process.
-
-### Testing Requirements
-
-*   All new features and bug fixes should be accompanied by **appropriate unit and/or integration tests**.
-*   Ensure all existing tests pass before submitting a PR.
-*   Aim for good test coverage, especially for critical functionalities.
-
-## 📄 License Information
-
-This project currently has **no specified license**. This means that by default, all rights are reserved by the copyright holder(s) and you may not reproduce, distribute, or create derivative works from this project.
+For a complete list of endpoints, request/response schemas, and authentication details, refer to the API documentation (Swagger)
+```bash
+http://127.0.0.1:8000/api/docs/
+```
 
 For any inquiries regarding licensing or permissions, please contact the main contributor.
 
