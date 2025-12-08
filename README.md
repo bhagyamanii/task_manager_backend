@@ -3,11 +3,7 @@
 A robust and scalable backend solution for managing tasks efficiently.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-None-red)
-![Stars](https://img.shields.io/github/stars/bhagyamanii/task_manager_backend?style=social)
-![Forks](https://img.shields.io/github/forks/bhagyamanii/task_manager_backend?style=social)
 
-![example-preview-image](/preview_example.png)
 
 ## ✨ Features
 
@@ -134,7 +130,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Token a1b2c3
 curl -X GET -H "Authorization: Token a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0" http://127.0.0.1:8000/api/tasks/
 ```
 
-### API Documentation (Placeholder)
+### API Documentation
 
 For a complete list of endpoints, request/response schemas, and authentication details, refer to the API documentation (Swagger)
 ```bash
