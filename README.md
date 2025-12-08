@@ -137,6 +137,12 @@ For a complete list of endpoints, request/response schemas, and authentication d
 http://127.0.0.1:8000/api/docs/
 ```
 
+### Postman API Endpoints:
+```bash
+https://.postman.co/workspace/My-Workspace~29597e5a-fce9-4530-87f1-904c810fe56c/collection/41927214-a9f2c7f0-444c-4fe6-a339-a2d9d81be30a?action=share&creator=41927214
+```
+
+
 For any inquiries regarding licensing or permissions, please contact the main contributor.
 
 ---
