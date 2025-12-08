@@ -142,6 +142,11 @@ http://127.0.0.1:8000/api/docs/
 https://.postman.co/workspace/My-Workspace~29597e5a-fce9-4530-87f1-904c810fe56c/collection/41927214-a9f2c7f0-444c-4fe6-a339-a2d9d81be30a?action=share&creator=41927214
 ```
 
+### Postman Workspace invite link: as there are endpoints saved with defined body structure (if swagger fails):
+```bash
+https://app.getpostman.com/join-team?invite_code=cc68ab9acc008e078494789d7b1f9af35c0b5cc215674979d43cb21120d4e16a
+```
+
 
 For any inquiries regarding licensing or permissions, please contact the main contributor.
 
