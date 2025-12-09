@@ -8,8 +8,6 @@ SECRET_KEY = 'django-insecure-7ggmppsi)w1ga&4yrx)mkff(p29-+4=nm8ouikbufucwtg@w_2
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -120,6 +118,8 @@ SIMPLE_JWT = {
 
     'SIGNING_KEY': SECRET_KEY,
 }
+
+ALLOWED_HOSTS = ["*"]
 
 #for documentations
 SPECTACULAR_SETTINGS = {
